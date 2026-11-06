@@ -1,0 +1,42 @@
+# Local environments and credentials
+.venv*/
+venv/
+.env
+.env.*
+!.env.example
+.dev.vars*
+.npmrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+# Dependencies, builds, and generated metadata
+node_modules/
+dist/
+build/
+*.egg-info/
+*.tsbuildinfo
+__pycache__/
+*.py[cod]
+# Runtime data and verification output
+data/
+.runtime/
+artifacts/
+test-results/
+playwright-report/
+coverage/
+.coverage*
+.pytest_cache/
+.ruff_cache/
+*.log
+*.sqlite*
+*.db
+# Machine/editor state and obsolete review captures
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.bak
+* 2.*
+docs/screenshots/

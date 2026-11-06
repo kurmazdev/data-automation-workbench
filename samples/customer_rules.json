@@ -1,0 +1,14 @@
+{
+  "fields": [
+    {"source": "Customer ID", "target": "customer_id", "kind": "text", "required": true},
+    {"source": "Company", "target": "company", "kind": "text", "required": true, "collapse_spaces": true},
+    {"source": "Email", "target": "email", "kind": "email", "required": true, "casing": "lower"},
+    {"source": "Balance", "target": "balance", "kind": "decimal"},
+    {"source": "Joined", "target": "joined", "kind": "date", "date_format": "%Y-%m-%d"},
+    {"source": "Region", "target": "region", "kind": "text", "casing": "upper"},
+    {"source": "Notes", "target": "notes", "kind": "text"}
+  ],
+  "duplicate_keys": ["customer_id"],
+  "duplicate_policy": "reject_later",
+  "null_markers": ["N/A", "NULL", "null"]
+}

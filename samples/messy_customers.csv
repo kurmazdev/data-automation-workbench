@@ -1,0 +1,18 @@
+Customer ID,Company,Email,Balance,Joined,Region,Notes
+001234, Northstar Supply , ACCOUNTS@NORTHSTAR.EXAMPLE ,0,2026-01-15,ne,Zero balance is valid
+001235,Harbor Coffee,orders@harbor.example,,2026-02-01,sw,Blank balance is not zero
+001236,Cedar   &   Finch,hello@cedar.example,1250.50,2026-02-14,se,Repeated spaces in company
+001234,Northstar Supply,accounts@northstar.example,85.00,2026-01-15,NE,Duplicate customer ID
+001237,Pine Street Studio,missing-at-sign.example,42.00,2026-03-02,NW,Invalid email
+001238,Atlas Office,finance@atlas.example,120.00,04/03/2026,NE,Ambiguous date order
+001239,Moss Market,team@moss.example,"1,200.00",2026-03-05,SW,Grouping separator needs an explicit source correction
+,Willow Wholesale,hello@willow.example,12.00,2026-03-06,SE,Missing required identifier
+001240,Riverbend Goods,billing@riverbend.example,75.00,2026-02-30,NW,Invalid calendar date
+001241,Lumen Print,HELLO@LUMEN.EXAMPLE,N/A,2026-03-08,ne,Explicit null marker in optional balance
+001242,Oak & Stone,team@oak.example,0,2026-03-09,NE,=SUM(A1:A2)
+001243, Bright Paper ,billing@bright.example,-12.75,2026-03-10,sw,Negative balance is valid
+001244,,team@spruce.example,18.00,2026-03-11,NE,Missing required company
+,,,,,,
+001245,Acorn Books,accounts@acorn.example,200.00,2026-03-12,NE,Already clean
+001246,Juniper Works,NULL,55.00,2026-03-13,SE,Null marker in required email
+001247, Meadow Textiles ,hello@meadow.example,000.00,2026-03-14,nw,Leading zero decimal notation

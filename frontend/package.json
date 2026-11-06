@@ -1,0 +1,26 @@
+{
+  "name": "data-automation-workbench",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && node scripts/build.mjs",
+    "test:e2e": "npm run build && playwright test",
+    "format:check": "prettier --check src scripts tests playwright.config.ts index.html package.json tsconfig.json"
+  },
+  "dependencies": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.11.1",
+    "@playwright/test": "1.64.1",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "esbuild": "0.28.2",
+    "prettier": "^3.9.10",
+    "typescript": "5.9.3"
+  }
+}
